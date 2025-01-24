@@ -21,8 +21,8 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7463993380:AAEPG40Gaq5QrpTyIuUOgcBpz6N0U9-
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7638575366').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/Panda_spammer") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002489697591'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+Y7C_9wzn4ehiMmNl')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002423275663').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+CKWYm9jJ2DEyZmNl')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002113522559').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh77707:surajitsingh77707@jamundd.ke8az.mongodb.net/?retryWrites=true&w=majority&appName=Jamundd")
