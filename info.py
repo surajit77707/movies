@@ -15,13 +15,13 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23967991'))
 API_HASH = environ.get('API_HASH', 'a2c3ccfaff4c2dbbff7d54981828d4f1')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7463993380:AAHmGcEHXSw8e0A58bpjKuex91IHbkGMLnw')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7463993380:AAFuufjlPsdX7XAyjSYK7A7ZDTMzVn4hEsw')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7638575366').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/Panda_spammer") # ADMIN USERNAME
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1883889098').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/Ban6king9") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002489697591'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+CKWYm9jJ2DEyZmNl')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/venom_support_bot2')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002113522559').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
