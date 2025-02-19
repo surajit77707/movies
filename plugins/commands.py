@@ -373,8 +373,8 @@ async def start(client:Client, message):
         caption=f_caption,
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    delCap = "<b>ʏᴏᴜʀ ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ {} ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ᴠɪᴏʟᴀᴛɪᴏɴs!</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs')
-    afterDelCap = "<b>ʏᴏᴜʀ ғɪʟᴇ ɪs ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ {} ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ᴠɪᴏʟᴀᴛɪᴏɴs!</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs') 
+    delCap = "<b>𝙔𝙊𝙐𝙍 𝙁𝙄𝙇𝙀 𝙒𝙄𝙇𝙇 𝘽𝙀 𝘿𝙀𝙇𝙀𝙏𝙀𝘿 𝘼𝙁𝙏𝙀𝙍 {} 𝙏𝙊 𝘼𝙑𝙊𝙄𝘿 𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝙑𝙄𝙊𝙇𝘼𝙏𝙄𝙊𝙉𝙎! 𝙎𝘼𝙑𝙀 𝙏𝙃𝙀 𝙁𝙄𝙇𝙀 𝙏𝙊 𝙎𝘼𝙑𝙀𝘿 𝙈𝘼𝙎𝙎𝘼𝙂𝙀</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs')
+    afterDelCap = "<b>𝙔𝙊𝙐𝙍 𝙁𝙄𝙇𝙀 𝙒𝙄𝙇𝙇 𝘽𝙀 𝘿𝙀𝙇𝙀𝙏𝙀𝘿 𝘼𝙁𝙏𝙀𝙍 {} 𝙏𝙊 𝘼𝙑𝙊𝙄𝘿 𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝙑𝙄𝙊𝙇𝘼𝙏𝙄𝙊𝙉𝙎! 𝙎𝘼𝙑𝙀 𝙏𝙃𝙀 𝙁𝙄𝙇𝙀 𝙏𝙊 𝙎𝘼𝙑𝙀𝘿 𝙈𝘼𝙎𝙎𝘼𝙂𝙀</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs') 
     replyed = await message.reply(
         delCap,
         reply_to_message_id= toDel.id)
