@@ -175,14 +175,15 @@ async def start(client:Client, message):
                 newPoint = await db.get_point(refUserId)
                 if AUTH_CHANNEL and await is_req_subscribed(client, message):
                         buttons = [[
+                            InlineKeyboardButton('☆ Mᴜsɪᴄ ʙᴏᴛ', url='https://t.me/Yuxmusicbot'),
                             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/venom_support_bot2'),
+                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/moviiieeeesss/12'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                        m=await message.reply_sticker("CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA") 
-                        await asyncio.sleep(1)
+                        m=await message.reply_sticker("CAACAgUAAxkBAAMHZ7Z8HHWGnnRFupPVBDY-9mRtnRoAAgQAA8EkMTGJ5R1uC7PIEB4E") 
+                        await asyncio.sleep(2)
                         await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
                             reply_markup=reply_markup,
@@ -198,14 +199,15 @@ async def start(client:Client, message):
             pass
     if len(message.command) != 2:
         buttons = [[
+                            InlineKeyboardButton('☆ Mᴜsɪᴄ ʙᴏᴛ', url='https://t.me/Yuxmusicbot'),
                             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/venom_support_bot2'),
+                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/moviiieeeesss/12'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA") 
-        await asyncio.sleep(1)
+        m=await message.reply_sticker("CAACAgUAAxkBAAMHZ7Z8HHWGnnRFupPVBDY-9mRtnRoAAgQAA8EkMTGJ5R1uC7PIEB4E") 
+        await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
             reply_markup=reply_markup,
@@ -254,9 +256,10 @@ async def start(client:Client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
+            InlineKeyboardButton('☆ Mᴜsɪᴄ ʙᴏᴛ', url='https://t.me/Yuxmusicbot'),
             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/venom_support_bot2'),
+                            InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ ⚙️", url='https://t.me/moviiieeeesss/12'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -950,7 +953,7 @@ async def refer(bot, message):
         InlineKeyboardButton(f'⏳ {referdb.get_refer_points(message.from_user.id)}', callback_data='ref_point'),
         InlineKeyboardButton('Close', callback_data='close_data')
     ]]  
-    m=await message.reply_sticker("CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA")      
+    m=await message.reply_sticker("CAACAgUAAxkBAAMHZ7Z8HHWGnnRFupPVBDY-9mRtnRoAAgQAA8EkMTGJ5R1uC7PIEB4E")      
     await m.delete()
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
