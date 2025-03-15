@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23967991'))
 API_HASH = environ.get('API_HASH', 'a2c3ccfaff4c2dbbff7d54981828d4f1')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7463993380:AAHeor0byFbueOR6id-vWXGgJ-CNG2YFo54')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7463993380:AAHx0fjsi4bA0cFHH-YmwKTrV8xweiUv33A')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1883889098').split()]
@@ -25,8 +25,8 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/venom_support_b
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002113522559').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh77707:surajitsingh77707@jamundd.ke8az.mongodb.net/?retryWrites=true&w=majority&appName=Jamundd")
-DATABASE_NAME = environ.get('DATABASE_NAME', "jamundd")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh77718:surajitsingh77718@cluster0.rcdkq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
